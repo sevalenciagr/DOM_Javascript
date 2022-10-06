@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* overflow: auto; */
   }
   
   .clear{
@@ -75,15 +76,16 @@
     -webkit-transition: all 500ms ease-in-out;
     -moz-transition: all 500ms ease-in-out;
   }
+
   
   /*Style images body*/
   .img{
     width: 800px;
-    height: 600px;
-    border-radius: 20px;
+    /* height: 600px; */
+    border-radius: 40px;
     float: center;
     display: auto;
-    padding: auto;
+    padding: 25px;
     justify-items:flex-end;
   }
 
@@ -107,3 +109,5 @@
     scale: 1.2;
     transition: 300ms ease;
 }
+
+ 
