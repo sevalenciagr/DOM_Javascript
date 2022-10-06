@@ -16,11 +16,13 @@ console.log(firstHeading);
 const RMpSectionB = document.getElementById('RMpSectionB');
 const btnReadMore = document.querySelector('#btnReadMore');
 const img2 = document.createElement('img');
+const imgText = document.getElementById('textOnClick');
 
 img2.setAttribute('src', 'https://www.dsbnoticias.com/wp-content/uploads/2022/09/NASA-ASTEROIDE-1024x683.png');
 
 function bntReadmoreOnClick(){
   RMpSectionB.append(img2);
+  imgText.innerText = "Armageddon es una película de ciencia ficción y cine catástrofe de 1998, dirigida por Michael Bay, producida por Jerry Bruckheimer y protagonizada por Bruce Willis, Billy Bob Thornton, Ben Affleck, Liv Tyler, Owen Wilson, Will Patton, Michael Clarke Duncan, Peter Stormare y Steve Buscemi. La película trata sobre un grupo de perforadores de plataformas petrolíferas que son enviados por la NASA a un enorme asteroide que amenaza el planeta Tierra con la idea de taladrar su superficie y poder destruirlo con una bomba nuclear."
 }
 
 //Codigo Jeferson.
