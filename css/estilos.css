@@ -1,7 +1,8 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 2px;
     box-sizing: border-box;
+    background-color: #CEEDD8BF;
   }
   
   .clear{
@@ -110,12 +111,35 @@
     transition: 300ms ease;
 }
 
+/* Estilos a la imagen y texto del boton "Que es una estrella" */
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo  */
+#RMpSectionC {
+  display:contents;
+  font-weight: bold;
+}
+
+/* Dando estilos a la imagen y texto del boton read more */
 .textOnClick {
   display: flex;
   align-items: center;
   justify-content: center;
 }
- 
+
+/* Estilos al texto del boton read more */
 #textOnClick {
-  border-radius: 20 rem;
+  margin: 40px;
+  font-weight: bold;
+}
+
+/* Estilos al main */
+
+.main {
+  margin: 5rem;
+  text-align: center;
 }
