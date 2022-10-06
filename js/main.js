@@ -46,6 +46,6 @@ const img3 = document.createElement('img');
 img3.setAttribute('src', 'https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release_0.png');
 
  function bntfotoestrellaOnClick(){
-   RMpSectionB.append(img3);
+   RMpSectionC.append(img3);
 }
 
