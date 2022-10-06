@@ -76,6 +76,19 @@
     -moz-transition: all 500ms ease-in-out;
   }
   
+  /*Style images body*/
+  .img{
+    width: 800px;
+    height: 600px;
+    border-radius: 20px;
+    float: center;
+    display: auto;
+    padding: auto;
+    justify-items:flex-end;
+  }
+
+
+
   /*Toggle*/
   
   .slidemenu .slide-toggle:checked + label{

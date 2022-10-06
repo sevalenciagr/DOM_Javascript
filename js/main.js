@@ -18,6 +18,7 @@ const btnReadMore = document.querySelector('#btnReadMore');
 const img2 = document.createElement('img');
 
 img2.setAttribute('src', 'https://www.dsbnoticias.com/wp-content/uploads/2022/09/NASA-ASTEROIDE-1024x683.png');
+img2.setAttribute('class', 'img');
 
 function bntReadmoreOnClick(){
   RMpSectionB.append(img2);
@@ -43,7 +44,9 @@ const RMpSectionC = document.getElementById('RMpSectionC');
 const btnfotoestrella = document.querySelector('#btnfotoestrella');
 const img3 = document.createElement('img');
 
+
 img3.setAttribute('src', 'https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release_0.png');
+img3.setAttribute('class', 'img');
 
  function bntfotoestrellaOnClick(){
    RMpSectionC.append(img3);
