@@ -276,7 +276,7 @@ padding: 0px;
 }
 
 #participants a::before {
-background-image: url('../imagenes/github.svg');
+background-image: url('/imagenes/logogit.png');
 background-size: contain;
 background-repeat: no-repeat;
 display: block;
