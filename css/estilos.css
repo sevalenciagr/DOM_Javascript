@@ -1,141 +1,148 @@
-* {
+*{
+  margin: 0;
+  padding: 2px;
   box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  background-color: #CEEDD8BF;
+  font-family: 'News Cycle', sans-serif;
+}
 
-  html {
-    font-size: 62.5%;
-    font-family: 'Gemunu Libre', sans-serif;
+.clear{
+  clear: both;
+}
 
-  }
 
-  main {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .section-a {
-    padding: 25px;
-  }
-  
-  .section-b {
-    padding: 25px;
-  }
-  
-  .section-c {
-    padding: 25px;
-  }
-  
-  body {background-color: #000000;}
-  h1 {
-    padding: 25px;
-    font-size: 4rem;
-    /*background-color: #0062d2;*/
-    color: #d20000;
-  
-  }
-  
-  
-  h2 {
-    font-size: 2.5rem;
-    color: #ffffff;
-    
-  }
-  
-  p{
-    font-size: 2rem;
-    color: #ffffff;
-  }
-  
-  .clear{
-    clear: both;
-  }
-  
-  
-  .slide-toggle{
-    display: none;
-  }
-  
-  .slidemenu{
-    font-family: arial, sans-serif;
-    /*max-width: 600px; */
-    /*margin: 50px auto; */
-    overflow: hidden;
-    background-color: #ff0000d5;
-    padding: 25px;
-  }
-  
-  .slidemenu label{
-    width: 25%;
-    text-align: center;
-    display: block;
-    float: left;
-    /*color: #333; */
-    color: #000000;
-    opacity: 0.2;
-  
-  }
-  
-  .slidemenu label:hover{
-    cursor: pointer;
-    /*color: #666;*/
-    color:#000000a5
-  }
-  
-  .slidemenu label span{
-    display: block;
-    padding: 10px;    
-  }
-  
-  .slidemenu label .icon{
-    font-size: 20px;
-    /* border: solid 2px #333; */
-    border: solid 2px #000000a5;
-    text-align: center;
-    height: 50px;
-    width: 50px;
-    display: block;
-    margin: 0 auto;
-    line-height: 50px;
-    border-radius: 50%;
-  }
-  
-  /*Bar Style*/
-  
-  .slider{
-    width: 100%;
-    height: 5px;
-    display: block;
-    background: #000000a5;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
-  
-  .slider .bar{
-    width: 25%;
-    height: 5px;
-    background: #000000a5;
-    border-radius: 5px;
-  }
-  
-  /*Animations*/
-  .slidemenu label, .slider .bar {
-    transition: all 500ms ease-in-out;
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-  }
-  
-  /*Toggle*/
-  
-  .slidemenu .slide-toggle:checked + label{
-    opacity: 1;
-  }
-  
-  
-  
-  .slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
-  .slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
-  .slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
-  .slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
-  
+.slide-toggle{
+  display: none;
+}
+
+.slidemenu{
+  font-family: arial, sans-serif;
+  max-width: 600px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.slidemenu label{
+  width: 25%;
+  text-align: center;
+  display: block;
+  float: left;
+  color: #333;
+  opacity: 0.2;
+
+}
+
+.slidemenu label:hover{
+  cursor: pointer;
+  color: #666;
+}
+
+.slidemenu label span{
+  display: block;
+  padding: 10px;    
+}
+
+.slidemenu label .icon{
+  font-size: 20px;
+  border: solid 2px #333;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+  line-height: 50px;
+  border-radius: 50%;
+}
+
+/*Bar Style*/
+
+.slider{
+  width: 100%;
+  height: 5px;
+  display: block;
+  background: #ccc;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.slider .bar{
+  width: 25%;
+  height: 5px;
+  background: #333;
+  border-radius: 5px;
+}
+
+/*Animations*/
+.slidemenu label, .slider .bar {
+  transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+}
+
+
+/*Style images body*/
+.img{
+  width: 800px;
+  /* height: 600px; */
+  border-radius: 40px;
+  float: center;
+  display: auto;
+  padding: 25px;
+  justify-items:flex-end;
+}
+
+
+
+/*Toggle*/
+
+.slidemenu .slide-toggle:checked + label{
+  opacity: 1;
+}
+
+
+
+.slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
+.slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
+.slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
+.slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
+
+.button:hover {
+  background-color: rgb(157, 59, 236) ;
+  scale: 1.2;
+  transition: 300ms ease;
+}
+
+/* Estilos a la imagen y texto del boton "Que es una estrella" */
+.box {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Estilo  */
+#RMpSectionC {
+display:contents;
+font-weight: bold;
+}
+
+/* Dando estilos a la imagen y texto del boton read more */
+.textOnClick {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Estilos al texto del boton read more */
+#textOnClick {
+margin: 40px;
+font-weight: bold;
+}
+
+/* Estilos al main */
+
+.main {
+margin: 5rem;
+text-align: center;
+}
+
+/* //fusion  */
