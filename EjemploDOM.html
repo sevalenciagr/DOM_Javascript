@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header >
@@ -22,7 +26,6 @@
                         
         </nav>
     </header>
-
 
     <main-header class="principal">
 
@@ -75,6 +78,7 @@
 
 
     <main>
+    
         <h1>Bienvenidos a las noticias</h1>
 
         <div class="container">
@@ -86,7 +90,15 @@
                     Por primera vez en la historia, los telescopios Hubble y Webb capturaron un evento astrológico 
                     al mismo momento. Fue la misión de la NASA que impactó contra un asteroide para cambiar su recorrido.
                 </p>
-                <button>Leer Mas</button>
+                <button id="btnclickestrella" onclick="bntclickestrellaOnClick()" class="button">Click que es una estrella</button>
+                <div class="box">
+                    <p id="RMpSectionC" class="img"></p>
+                    <p id="RMpSectionA"></p>
+                </div>
+
+
+                <!-- <p id="RMpSectionC" class="img"></p> -->
+                <a href="https://www.nasa.gov/ " target="_blank"><button class = "button">Click para mas info nasa</button></a>
             </section>
             <section class="section-b">
                 <h2>
@@ -99,7 +111,12 @@
                     Planificación Espacial reunió a 18 agencias espaciales para evaluar qué sería lo mejor para desviar
                     un asteroide, en función de su tamaño y trayectoria.
                 </p>
-                <button>Read More</button>
+                <div class="textOnClick">
+                    <p id="textOnClick"></p>
+                    <p id="RMpSectionB"></p>
+                     <!-- nuevo cambio 1  -->
+                </div>
+                <button id="btnReadMore" onclick="bntReadmoreOnClick()">Read More</button>
             </section>
             <section class="section-c">
                 <p id="para">Cualquier texto que cambiará de color</p>
