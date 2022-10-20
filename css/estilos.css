@@ -1,5 +1,24 @@
 *{
 
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.clear{
+  clear: both;
+}
+
+.slide-toggle {
+  display: none;
+}
+  
+.slidemenu{
+  font-family: arial, sans-serif;
+  max-width: 600px;
+  margin: 50px auto;
+  overflow: hidden;
+
+
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -120,6 +139,7 @@ background-color: #18181873;
   overflow: hidden;
   /* background-color: crimson; */
 
+
 }
 
 .slidemenu label{
@@ -140,7 +160,7 @@ background-color: #18181873;
 .slidemenu label span{
   display: block;
 
-  padding: 10px;
+  padding: 10px;    
 
 }
 
@@ -183,6 +203,7 @@ background-color: #18181873;
 
 
 
+
 /*Style images body*/
 .img{
   width: 800px;
@@ -197,6 +218,7 @@ background-color: #18181873;
 
 
 
+
 /*Toggle*/
 
 .slidemenu .slide-toggle:checked + label{
@@ -204,11 +226,89 @@ background-color: #18181873;
 }
 
 
+/* Acá empieza el footer */
+main{
+  height: 400px;
+}
+footer{
+/* height: 50px; */
+text-align: center;
+align-items: center;
+justify-items: center;
+background-color: rgb(18, 27, 91);
+padding: 16px;
+}
+footer a{
+text-decoration-line: none;
+color: white;
+font-size: 16px;
+}
+footer h4{
+padding-right: 20px;
+color: white;
+}
 
+#participants {
+display: flex;
+flex-direction: row;
+gap: 16px;
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+
+#participants a {
+  border: 1px solid #FFF7;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-weight: bold;
+  gap: 8px;
+  line-height: 18px;
+  padding: 8px;
+  transition: 150ms;
+}
+
+#participants a:hover {
+  border-color: #FFFF;
+  box-shadow: 0px 0px 5px #FFF7;
+}
+
+#participants a::before {
+background-image: url('../imagenes/github.svg');
+background-size: contain;
+background-repeat: no-repeat;
+display: block;
+height: 18px;
+width: 18px;
+content: '';
+}
+
+
+/* .logo-git{
+width: 16px;
+height: 15px;
+border-radius: 50%;
+float:center;   
+display:inline-flex;
+padding: 0px 10px 0px 5px;  
+justify-items: center;
+}
+.git{
+float: none;
+}
+.participante{
+display: flex;
+flex-direction: row;
+text-align: center;
+justify-content: center;
+} */
 .slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
 .slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
 .slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
 .slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
+
 
 
 .button:hover {
@@ -251,4 +351,5 @@ text-align: center;
 }
 
 /* //fusion  */
+
 
